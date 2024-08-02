@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h4>Conditional Rendering in pure JavaScript</h4>
+    <div>
+        <p id="next-text">Next text </p>
+        <p id="prev-text">Prev Text</p>
+        <p id="reset-text">Reset Successfully</p>
+    </div>
+
+    <div class="button-sec">
+        <button type="button" id="next" onclick="shownexttext()">Next</button>
+        <button type="button" id="prev" onclick="showprevtext()">Prev</button>
+        <button type="button" id="reset" onclick="showresettext()">Reset</button>
+    </div>
+
+    <script>
+
+        // pahle next button ko target karke:
+        function shownexttext(){
+            document.getElementById("next-text").style.display = "block";
+            document.getElementById("prev-next").style.display="none";
+        }
+
+        
+       // prev button ko target karke:
+      function showprevtext(){
+        document.getElementById("prev-text").style.display = "block";
+        document.getElementById("next-text").style.display = "none";
+
+      }
+
+    //   reset button ko target karke
+    function showresettext () {
+        document.getElementById("prev-text").style.display = "none";
+        document.getElementById("next-text").style.display = "none";
+        document.getElementById("reset-text").style.display = "block"; 
+    }
+    
+
+
+</script>
+</body>
+</html>

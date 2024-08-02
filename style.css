@@ -1,0 +1,23 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    display: none;
+    text-align: center;
+    color: red;
+    font-size: 18px;
+}
+h4 {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.button-sec {
+    text-align: center;
+}
+button {
+    cursor: pointer;
+}
